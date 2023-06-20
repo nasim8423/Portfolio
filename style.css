@@ -1,0 +1,563 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+/* ---------scroll bar------ */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #080808;
+    color: #fff;
+}
+
+/*------- header -----------*/
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/background.png);
+    background-position: center;
+    background-size: cover;
+}
+
+/*----------- container --------*/
+.container {
+    padding: 10px 8%;
+}
+
+/*-------- container-list -----*/
+.container-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+/*--------- logo --------*/
+.logo h2 {
+    font-size: 55px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.logo h2 span {
+    color: #ff004f;
+    /* color: green; */
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.logo span.and {
+    color: #fff
+}
+
+/*-------- menu-list --------*/
+/* .menu-list ul  {
+    display: inline-block;
+    padding: 0 20px;
+} */
+
+.menu-list ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0px 20px;
+}
+
+.menu-list ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+
+}
+
+.menu-list ul li a::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    position: absolute;
+    background: #ff004f;
+    ;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+.menu-list ul li a:hover::after {
+    width: 100%;
+}
+
+/*--------- header-text -------*/
+.header-text {
+    margin-top: 26%;
+    font-size: 30px;
+}
+
+.header-text h1 {
+    font-size: 55px;
+    margin-top: 20px;
+}
+
+.header-text h1 span {
+    /* color: rgb(9, 220, 9); */
+    /* color:  #ff004f; */
+    color: orangered;
+}
+
+/*-------- Downloa-btn -------*/
+.read-me-btn {
+    margin-top: 30px;
+}
+
+.read-me-btn a {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 25px;
+    background: rgb(21, 6, 183);
+    color: #fff;
+    border-radius: 3px;
+}
+
+.read-me-btn a:hover {
+    background-color: orangered;
+    color: #fff;
+}
+
+/*--------- about ------------*/
+#about {
+    margin: 70px 0px;
+    color: #ababab;
+}
+
+
+/*------- row ------*/
+.row {
+    padding: 0 50px;
+    /* background-color:gold; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/*------- about-col-1 ------------*/
+.about-col-1 {
+    flex-basis: 35%;
+
+}
+
+.about-col-1 img {
+    width: 100%;
+    height: 600px;
+    border-radius: 15px;
+    background-position: center;
+    background-size: cover;
+}
+
+/*------ about-col-2 ---------*/
+.about-col-2 {
+    flex-basis: 60%;
+
+}
+
+.sub-title {
+    font-size: 55px;
+    font-weight: 600;
+    color: #ffff;
+    margin-bottom: 15px;
+}
+
+
+
+/*-------- tab-title --------*/
+.tab-title {
+    display: flex;
+    margin: 35px 0 25px;
+}
+
+.tab-link {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-link::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.3s;
+}
+
+.tab-link.active-link::after {
+    width: 50%;
+}
+
+/*--------- tab-contents -------*/
+.tab-contents ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span {
+    color: #b54769;
+    font-size: 14px;
+    font-weight: bold;
+    /* padding-top: 20px;
+    padding-bottom: 20px; */
+
+}
+
+.tab-contents ul li span.Percentage {
+    color: #fff;
+}
+
+.tab-contents ul li span.mark {
+    color: orange;
+}
+
+.tab-contents {
+    display: none;
+}
+
+/*------ active-tab -------*/
+.tab-contents.active-tab {
+    display: block;
+}
+
+/*----------- services ------*/
+#services {
+    padding: 30p 0x;
+    /* background: cadetblue; */
+}
+
+/*----------- service-container ----------*/
+.service-container {
+    padding: 0 50px;
+}
+
+/*------- services-list -----------*/
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+
+}
+
+
+/*---------- services-list div ------------*/
+.services-list div {
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+/*--------- services-list div i ----------*/
+.services-list div i {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+
+/*--------- .services-list div h2 ----------*/
+.services-list div h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+/*---------- services-list div a -----------*/
+.services-list div a {
+    text-decoration: none;
+    color: #ffff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.services-list div:hover {
+    background: #ff004f;
+    transform: translateY(-10px);
+}
+
+/*--------- portfolio -----------*/
+#portfolio {
+    padding: 50px 0px;
+    /* background: cyan; */
+}
+
+/*-------- port-container ------*/
+.port-container {
+    padding: 0 50px;
+}
+
+/*--------- work-list -----*/
+.work-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+/*------ work --------*/
+.work {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+/*----- layer -----*/
+.layer {
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+
+}
+
+.layer h3 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.layer a {
+    margin-top: 20px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.work:hover img {
+    transform: scale(1.1);
+}
+
+.work:hover .layer {
+    height: 100%;
+}
+
+/*-------- see-more-btn ------*/
+.see-more-btn {
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+}
+
+.see-more-btn:hover {
+    background: #ff004f;
+}
+
+/*-------- contact-left --------*/
+.contact-left {
+    flex-basis: 35%;
+    /* background: chartreuse; */
+}
+
+.contact-left p {
+    margin-top: 30px;
+
+}
+
+.contact-left p i {
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+/*---------- contact-right --------*/
+.contact-right {
+    flex-basis: 60%;
+    /* background: #b54769; */
+}
+
+/*---------- form -------*/
+.contact-right form {
+    width: 100%;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+form .btn2 {
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/*----------- copyright ----------*/
+.copyright {
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.copyright i {
+    color: #ff004f;
+}
+
+/*------ social-icons --------*/
+.social-icons {
+    margin-top: 30px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover {
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+
+/*------- Download CV btn -------*/
+.see-more-btn.btn2 {
+    display: inline-block;
+    background: #ff004f;
+}
+
+
+/*---------- Media query -------------*/
+.menu-list .fa-sharp {
+    display: none;
+}
+
+
+@media only screen and (max-width:600px) {
+    .header {
+        background-image: url('images/phone-background.png');
+    }
+
+    .header-text {
+        margin-top: 100%;
+        font-size: 16px;
+    }
+
+    .header-text h1 {
+        font-size: 30px;
+    }
+
+    /*----- bar icon ----*/
+    .menu-list .fa-sharp {
+        display: block;
+    }
+
+    .menu-list ul {
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.6s;
+    }
+
+    .menu-list ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    .menu-list ul .fa-sharp {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    /*--------- about-sub-title  -------*/
+    .sub-title {
+        font-size: 40px;
+    }
+
+    .about-col-1,.about-col-2 {
+        flex-basis: 100%;
+    }
+
+    .about-col-1 {
+        margin-bottom: 30px;
+    }
+
+    .about-col-2 {
+        font-size: 14px;
+    }
+
+    .tab-link {
+        font-size: 16px;
+        margin-right: 20px;
+    }
+
+    .contact-left,.contact-right {
+        flex-basis: 100%;
+    }
+
+    .copyright {
+        font-size: 14px;
+    }
+
+    
+}

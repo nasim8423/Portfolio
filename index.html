@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/863b85a0d7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-------- header --------->
+    <div class="header">
+
+        <!--------- container ---------->
+        <div class="container">
+            <div class="container-list">
+                <div class="logo">
+                    <h2><span>Na</Span>sim</h2>
+                </div>
+                <div class="menu-list">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolia</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-sharp fa-solid fa-square-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-sharp fa-solid fa-bars" onclick="openmenu()"></i>
+
+                </div>
+            </div>
+            <!----------- header-text ------->
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I' m <span>Front-end Developer</span> <br> & Backed-end Developer.</h1>
+                <!-- <h1>Hi, I' m <span>Nasim Akhtar</span> <br>From Uttar Pardesh.</h1> -->
+            </div>
+            <!-------- Downlaod-btn ------->
+            <!-- <div class="read-me-btn">
+                <a href="#">Login</a>
+            </div> -->
+        </div>
+    </div>
+
+    <!--------- About ----------->
+    <div id="about">
+        <div class="about-container">
+            <div class="row">
+
+                <!------- about-col-1 ------->
+                <div class="about-col-1">
+                    <!-- <img src="images/my photo.png.JPG" alt=""> -->
+                    <img src="images/user.png" alt="">
+                </div>
+
+                <!-------- about-col-2 ------------->
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>My name is Nasim Akhtar. I have completed B.Tech(CSE) from Bharat Institute of Technology,
+                        Meerut.
+                        I am fresher graduate in 2022. Looking for a new opportunity where I can learn and use my skills
+                        for betterment of organization. I have a great passion for Programming. I have good knowledge of
+                        front-end technologies ( HTML, CSS, Java-Script ) and back-end technologies Java (Opps-Concept,
+                        Exception Handling, Collection -Framework ), SQL.</p>
+
+                    <!----------- tab-title ---------->
+                    <div class="tab-title">
+                        <p class="tab-link active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-link" onclick="opentab('education')">Education</p>
+                        <p class="tab-link" onclick="opentab('project')">Project</p>
+                    </div>
+
+                    <!------- tab-contents --------->
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span> Core Java </span><br>Opps-Concept , Exception Handling , Collection-Framework ,
+                                Multi-Threading.
+                            <li><span> J2EE</span><br> JDBC , JSP, Servlet.</li>
+                            <li><span>Basic DSA </span><br>Sorting , Array , String , Stack , Queue.
+
+                            <li><span> Web Development</span><br>HTML , CSS , Java-Script , Basic React-JS. </li>
+                            <li><span> Database</span><br>SQL , MySQL</li>
+                            <li><span> Tools-Use </span><br>Eclipse , Vs-Code , Intellij IDE , NetBeans , Pycharm</li>
+                            <li><span> Other Skills </span><br>Ms Word , Power Point
+                        </ul>
+                    </div>
+
+                    <!------- education ---------->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B.Tech ( 2018 - 2022 )</span><br>Bharat Institute Of Technology ,
+                                Meerut.<br><span class="Percentage">Percentage - <span class="mark"> 69%</span></li>
+                            <li><span>12 th ( 2017 - 2018 )</span><br>A H I C Deurwa Madrapali, Deoria
+                                .<br><span class="Percentage">Percentage - <span class="mark"> 70%</span< /span>
+                            </li>
+                            <li><span>10 th ( 2014 - 2015 )</span><br>Buddha Inter College , Kushinagr.<br><span
+                                    class="Percentage">Percentage - <span class="mark"> 78%</span></li>
+
+                        </ul>
+                    </div>
+
+                    <!------------ project ---------->
+                    <div class="tab-contents" id="project">
+                        <ul>
+                            <li><span>Weather Application ( 15-11-2022 - 9-12-2022) </span><br><br>● In this project, we
+                                will be building a weather application. <br>● This application will show the temperature
+                                of a particular location to fetch
+                                weather information will need an API
+                            </li>
+                            <li><span>Tools-Use </span><br>HTML , CSS , Java-Script.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------ Services ------------>
+    <div id="services">
+
+        <!---------- service-container ----------->
+        <div class="service-container">
+            <h1 class="sub-title">My Services</h1>
+
+            <!------- services-list ----------->
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Designer</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In corporis veniam quis cum, quas
+                        praesentium provident harum vero dolor laudantium.</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-sharp fa-solid fa-crop"></i>
+                    <h2>Ui/Ux Designer</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In corporis veniam quis cum, quas
+                        praesentium provident harum vero dolor laudantium.</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Designer</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In corporis veniam quis cum, quas
+                        praesentium provident harum vero dolor laudantium.</p>
+                    <a href="#" class="learn">Learn More </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------- Portfolio ---------->
+    <div id="portfolio">
+
+        <!-------- port-container ------->
+        <div class="port-container">
+            <h1 class="sub-title"> Portfolio</h1>
+
+            <!----- work-list -------->
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, cum.</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, cum.</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Online Shoping App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, cum.</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!----- see-more-btn ------->
+            <a href="#" class="see-more-btn">See More</a>
+        </div>
+    </div>
+
+    <!-------------- contact ------------->
+    <div id="contact">
+
+        <!------- contact-container -------->
+        <div class="contact-container">
+
+            <!------ row ----------->
+            <div class="row">
+                <div class="contact-left">
+
+                    <!-- sub-title -->
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-sharp fa-regular fa-envelope"></i> care.nasimakhtar1786@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> +91 8423497000</p>
+
+                    <!-------- social-icons --------->
+                    <div class="social-icons">
+                        <a href="https://github.com/nasim8423"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/its__nasim__14/?hl=en"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/nasim-akhtar-27374817b/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                    </div>
+
+                    <!---- Download CV ------>
+                    <a href="images/my cv.pdf.pdf" download class="see-more-btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder=" Enter Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="see-more-btn btn2">Submit</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!------- copyright -------->
+        <div class="copyright">
+            <p>Copyright @ 123. Made with <i class="fa-sharp fa-solid fa-heart"></i> by Nasim Akhtar</p>
+        </div>
+    </div>
+
+
+    <!------- Java-Script ---------->
+    <script src="index.js"></script>
+    
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwkPjbyz2mMk-29hqSU1KoKlfbeDyCGpTmNkaopvCq4OJ4ECHyj-ybqwlskdzC4kfTr/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+
+</html>
